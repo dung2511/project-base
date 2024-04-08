@@ -1,0 +1,13 @@
+{
+  "name": "basetailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css":"tailwindcss -i input.css -o theme/frontend/css/output.css --watch"
+
+  },
+  "author": "",
+  "license": "ISC"
+}
