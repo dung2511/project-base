@@ -8,13 +8,96 @@
     <link rel="stylesheet" type="text/css" href="theme/frontend/css/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="theme/frontend/css/animate.min.css">
     <link rel="stylesheet" type="text/css" href="theme/frontend/css/lightbox.css">
+    <link rel="stylesheet" type="text/css" href="theme/frontend/css/output.css">
     <link rel="stylesheet" type="text/css" href="theme/frontend/css/main.css">
     <link rel="stylesheet" type="text/css" href="theme/frontend/css/style.css">
     <title>Trang chủ</title>
 </head>
 
 <body>
-    <header></header>
+    <header class="header header-index">
+        <div class="header-top  py-2">
+            <div class="container">
+                <div class="flex">
+                    <div class="w-full lg:w-4/5">
+                        <div class="flex justify-between">
+                            <a href="tel:0981 386 888" class="flex items-center">
+                                <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
+                                    style="background-image: url(theme/frontend/images/icon-phone-header.svg);"></span>
+                                <span class="text-sm">
+                                    Mua hàng - CSKH
+                                    <span class="font-bold hidden lg:inline">:098 125 3491</span>
+                                </span>
+                            </a>
+                            <a href="tel:0389851108" class="flex items-center">
+                                <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
+                                    style="background-image: url(theme/frontend/images/icon-phone-header.svg);"></span>
+                                <span class="text-sm">
+                                    Kỹ thuật - Bảo hành
+                                    <span class="font-bold hidden lg:inline">:038 985 1108</span>
+                                </span>
+                            </a>
+                            <a href="mailto:" class="flex items-center">
+                                <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
+                                    style="background-image: url(theme/frontend/images/icon-mail-header.svg);"></span>
+                                <span class="text-sm hidden md:inline">dev.black.2511@gmail.com</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex justify-end lg:w-1/5">
+                        <ul class="social-header flex items-center">
+                            <li>
+                                <a href="#" class="inline-block w-5 h-4 bg-contain bg-center bg-no-repeat"
+                                    style="background-image: url(theme/frontend/images/facebook-header.svg);"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block w-5 h-4 bg-contain bg-center bg-no-repeat"
+                                    style="background-image: url(theme/frontend/images/youtube-header.svg);"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block w-5 h-4 bg-contain bg-center bg-no-repeat"
+                                    style="background-image: url(theme/frontend/images/tiktok-header.svg);"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="flex items-center justify-between lg:justify-normal">
+                    <span class="lg:hidden show-menu-mobile text-[var(--cl-main)]"><i
+                            class="fa-solid fa-bars"></i></span>
+                    <a href="#" class="h-logo ">
+                        <img src="theme/frontend/images/logo.png" alt="">
+                    </a>
+                    <div class="menu flex-1 lg:flex justify-center fixed lg:static">
+                        <div class="logo-nav-menu lg:hidden">
+                            <a href="#">
+                                <img src="theme/frontend/images/logo.png" alt="">
+                            </a>
+                        </div>
+                        <ul>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">sản phẩm</a></li>
+                            <li><a href="#">Khách hàng</a></li>
+                            <li><a href="#">Dịch vụ</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <a href="tel:0981 386 888" class="flex items-center p-2 bg-[var(--bg-main)] rounded-[10px]">
+                        <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat sm:mr-2.5 shrink-0"
+                            style="background-image: url(theme/frontend/images/icon-phone-header.svg);"></span>
+                        <span class="font-bold hidden sm:inline">0981 386 888</span>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="over-lay block lg:hidden"></div>
+    </header>
+
     <section class="section-banner">
 
     </section>
@@ -27,7 +110,7 @@
     <section class="section-services">
 
     </section>
-    <section class="section-partner">
+    <section class="section-feedback">
 
     </section>
     <section class="section-news">
