@@ -16,54 +16,57 @@
 
 <body>
     <header class="header header-index">
-        <div class="header-top  py-2">
+        <div class="header-top bg-grandient py-3">
             <div class="container">
-                <div class="flex">
-                    <div class="w-full lg:w-4/5">
-                        <div class="flex justify-between">
-                            <a href="tel:0981 386 888" class="flex items-center">
-                                <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
-                                    style="background-image: url(theme/frontend/images/icon-phone-header.svg);"></span>
-                                <span class="text-sm">
-                                    Mua hàng - CSKH
-                                    <span class="font-bold hidden lg:inline">:098 125 3491</span>
-                                </span>
-                            </a>
-                            <a href="tel:0389851108" class="flex items-center">
-                                <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
-                                    style="background-image: url(theme/frontend/images/icon-phone-header.svg);"></span>
-                                <span class="text-sm">
-                                    Kỹ thuật - Bảo hành
-                                    <span class="font-bold hidden lg:inline">:038 985 1108</span>
-                                </span>
-                            </a>
-                            <a href="mailto:" class="flex items-center">
-                                <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
-                                    style="background-image: url(theme/frontend/images/icon-mail-header.svg);"></span>
-                                <span class="text-sm hidden md:inline">dev.black.2511@gmail.com</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hidden lg:flex justify-end lg:w-1/5">
-                        <ul class="social-header flex items-center">
-                            <li>
-                                <a href="#" class="inline-block w-5 h-4 bg-contain bg-center bg-no-repeat"
-                                    style="background-image: url(theme/frontend/images/facebook-header.svg);"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="inline-block w-5 h-4 bg-contain bg-center bg-no-repeat"
-                                    style="background-image: url(theme/frontend/images/youtube-header.svg);"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="inline-block w-5 h-4 bg-contain bg-center bg-no-repeat"
-                                    style="background-image: url(theme/frontend/images/tiktok-header.svg);"></a>
-                            </li>
-                        </ul>
+                <div class="flex items-center">
+                    <ul class="social-header hidden lg:flex items-center mr-5">
+                        <li>
+                            <a href="#" class="inline-block w-8 h-8 bg-contain bg-center bg-no-repeat"
+                                style="background-image: url(theme/frontend/images/icon/icon-facebook.svg);"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block w-8 h-8 bg-contain bg-center bg-no-repeat"
+                                style="background-image: url(theme/frontend/images/icon/icon-youtube.svg);"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="inline-block w-8 h-8 bg-contain bg-center bg-no-repeat"
+                                style="background-image: url(theme/frontend/images/icon/icon-instagram.svg);"></a>
+                        </li>
+                    </ul>
+                    <a href="tel:0981 386 888" class="flex items-center mr-5">
+                        <span class="w-8 h-8 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
+                            style="background-image: url(theme/frontend/images/icon/icon-hotline-header.svg);"></span>
+                        <span class="text-sm hidden md:inline text-white">
+                            Hotline:
+                            <span class="font-bold text-white lg:inline">098 125 3491</span>
+                        </span>
+                    </a>
+                    <a href="mailto:ng.vandung.2511@gmail.com" class="flex items-center">
+                        <span class="w-8 h-8 inline-block bg-contain bg-center bg-no-repeat mr-2.5 shrink-0"
+                            style="background-image: url(theme/frontend/images/icon/icon-email-header.svg);"></span>
+                        <span class="text-sm hidden md:inline text-white">
+                            Email:
+                            <span class="font-bold text-white md:inline">ng.vandung.2511@gmail.com</span>
+                        </span>
+                    </a>
+                    <div class="box-control-user flex-1 flex justify-end">
+                        <a href="yeu-thich.html" class="product-heart flex items-center mr-5">
+                            <div class="box-icon mr-1 w-8 h-9 shrink-0">
+                                <img src="theme/frontend/images/icon/icon-heart.svg" alt="">
+                            </div>
+                            <span class="hidden lg:inline">Yêu thích</span>
+                        </a>
+                        <a href="dang-nhap.html" class="product-heart flex items-center">
+                            <div class="box-icon mr-1 w-8 h-9 shrink-0">
+                                <img src="theme/frontend/images/icon/icon-user.svg" alt="">
+                            </div>
+                            <span class="hidden lg:inline">Đăng nhập/ Đăng ký</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-bottom">
+        <div class="header-bottom bg-white">
             <div class="container">
                 <div class="flex items-center justify-between lg:justify-normal">
                     <span class="lg:hidden show-menu-mobile text-[var(--cl-main)]"><i
@@ -78,31 +81,55 @@
                             </a>
                         </div>
                         <ul>
+                            <li><a href="#">Trang chủ</a></li>
                             <li><a href="#">Giới thiệu</a></li>
-                            <li><a href="#">sản phẩm</a></li>
-                            <li><a href="#">Khách hàng</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
                             <li><a href="#">Dịch vụ</a></li>
                             <li><a href="#">Tin tức</a></li>
                             <li><a href="#">Liên hệ</a></li>
                         </ul>
                     </div>
-                    <a href="tel:0981 386 888" class="flex items-center p-2 bg-[var(--bg-main)] rounded-[10px]">
-                        <span class="w-4 h-4 inline-block bg-contain bg-center bg-no-repeat sm:mr-2.5 shrink-0"
-                            style="background-image: url(theme/frontend/images/icon-phone-header.svg);"></span>
-                        <span class="font-bold hidden sm:inline">0981 386 888</span>
-
+                    <a href="javascript:void(0);" class="flex items-center mr-4 btn-show-modal">
+                        <span class="w-8 h-8 inline-block bg-contain bg-center bg-no-repeat shrink-0"
+                            style="background-image: url(theme/frontend/images/icon/icon-search.svg);"></span>
+                    </a>
+                    <a href="javascript:void(0);" class="flex items-center btn-show-cart relative">
+                        <span
+                            class="count_cart absolute inline-flex items-center justify-center text-[#0081a7] -top-1 bg-white text-sm w-4 h-4 rounded-full -right-1 font-bold">0</span>
+                        <span class="w-8 h-8 inline-block bg-contain bg-center bg-no-repeat shrink-0"
+                            style="background-image: url(theme/frontend/images/icon/icon-cart.svg);"></span>
                     </a>
                 </div>
             </div>
         </div>
         <div class="over-lay block lg:hidden"></div>
     </header>
-
+    <div
+        class="form-search fixed top-[-100%] left-0 z-50 flex h-full w-full items-center justify-center bg-[rgba(0,0,0,.7)] transition-all duration-300">
+        <span class="block close-form-search"></span>
+        <form class="flex items-center form-search" action="" method="GET">
+            <input
+                class="form-control mr-2 flex-1 border-t-[0px] border-r-[0px] border-l-[0px] border-b-[1px] border-solid border-white bg-transparent p-3 text-white outline-none placeholder:text-white"
+                id="input-search-header" itemprop="query-input" name="s" placeholder="Nhập từ khóa..." type="text">
+            <input type="hidden" name="post_type" value="post" />
+            <button class="btn-search text-[1.25rem] text-white" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+    </div>
     <section class="section-banner">
+        <div class="swiper slide-banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
 
+                </div>
+            </div>
+        </div>
     </section>
     <section class="section-intro">
-
+        <div class="container">
+            <div class="flex flex-wrap"></div>
+        </div>
     </section>
     <section class="section-product">
 
@@ -117,12 +144,15 @@
 
     </section>
     <footer></footer>
-    <script src="theme/frontend/js/swiper-bundle.min.js" type="text/javascript"></script>
-    <script src="theme/frontend/js/fslightbox.js" type="text/javascript"></script>
-    <script src="theme/frontend/js/wow.min.js" type="text/javascript"></script>
-    <script src="theme/frontend/js/modal.js" type="text/javascript"></script>
-    <script src="theme/frontend/js/script.js" type="text/javascript"></script>
-    <script src="theme/frontend/js/slider.js" type="text/javascript"></script>
+    <div class="fixed bottom-8 cursor-pointer btn-to-top right-8 w-10 h-10 z-20" style="display: none;">
+        <img src="theme/frontend/images/icon/icon-backtotop.svg" alt="">
+    </div>
+    <script src="theme/frontend/js/swiper-bundle.min.js" defer type="text/javascript"></script>
+    <script src="theme/frontend/js/fslightbox.js" defer type="text/javascript"></script>
+    <script src="theme/frontend/js/wow.min.js" defer type="text/javascript"></script>
+    <script src="theme/frontend/js/modal.js" type="module" defer></script>
+    <script src="theme/frontend/js/script.js" defer type="text/javascript"></script>
+    <script src="theme/frontend/js/slider.js" defer type="text/javascript"></script>
 </body>
 
 </html>

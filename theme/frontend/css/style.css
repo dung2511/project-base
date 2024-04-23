@@ -2,7 +2,7 @@
   --cl-main: #0081a7;
   --cl-main-2: #00afb9;
 }
-.cl-grandient-1 {
+.bg-grandient {
   background: linear-gradient(180deg, #0081a7 0%, #00afb9 100%);
 }
 .form-all input {
@@ -25,6 +25,8 @@
 }
 .social-header li {
   display: inline-flex;
+}
+.social-header li:not(:last-child) {
   margin-right: 1.25rem;
 }
 .header-bottom .h-logo {
@@ -33,8 +35,6 @@
 
 .menu ul li:last-child {
   margin-right: 0;
-}
-.menu ul li a {
 }
 .header-index .menu {
   max-width: min(15rem, 60%);
@@ -50,11 +50,6 @@
 .header-index .header-bottom {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.header-index .header-top {
-  background-color: white;
-  color: black;
 }
 
 .header-index .menu {
@@ -69,7 +64,8 @@
 }
 .header-index .menu ul li {
   padding-left: 2rem;
-  color: white;
+  color: black;
+  text-transform: capitalize;
 }
 .header-index .menu.active {
   right: 0;
@@ -135,6 +131,45 @@
   content: "/";
   margin: 0 0.5rem;
 }
+.form-search.active {
+  top: 0;
+}
+.close-form-search {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.form-search .form-search {
+  width: 100%;
+  max-width: min(600px, 90%);
+}
+.form-search.active {
+  top: 0;
+}
+.close-form-search::before,
+.close-form-search::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  background: #fff;
+  position: absolute;
+}
+.close-form-search::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.close-form-search::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
 @media (min-width: 1024px) {
   .header-index .menu {
     max-width: unset;
@@ -145,6 +180,7 @@
     display: inline-block;
     margin-right: 1rem;
     font-size: 1.125rem;
+    padding: 0.5rem 0;
   }
   .header-index .menu ul li {
     padding-left: 0;
