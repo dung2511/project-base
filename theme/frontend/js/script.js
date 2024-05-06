@@ -27,6 +27,9 @@ var GUI = (function () {
         }, 1000);
 
     }
+    var fixedMenu = function () {
+
+    }
     var iconMenu = function () {
         var width_ = window.innerWidth;
         if (width_ < 1024) {
@@ -62,7 +65,14 @@ var GUI = (function () {
             });
         }
     };
+    var checkActiveMenu = function () {
+        var listItemMenu = document.querySelectorAll('.menu > ul > li > a');
+        if (listItemMenu.length > 0) {
+            listItemMenu.forEach(item => {
+            })
+        }
 
+    }
     var showModalRegister = function () {
         const openModalRegister = document.querySelectorAll(".btn-register");
         const closeModalRegister = document.querySelector(".box-close-modal");
@@ -180,6 +190,7 @@ var GUI = (function () {
             moduleTabContent();
             moduleSearch();
             backToTop();
+            checkActiveMenu();
         },
     };
 })();

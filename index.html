@@ -12,6 +12,15 @@
     <link rel="stylesheet" type="text/css" href="theme/frontend/css/main.css">
     <link rel="stylesheet" type="text/css" href="theme/frontend/css/style.css">
     <title>Trang chủ</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELYT602GS1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ELYT602GS1');
+    </script>
 </head>
 
 <body>
@@ -54,13 +63,13 @@
                             <div class="box-icon mr-1 w-8 h-9 shrink-0">
                                 <img src="theme/frontend/images/icon/icon-heart.svg" alt="">
                             </div>
-                            <span class="hidden lg:inline">Yêu thích</span>
+                            <span class="hidden lg:inline text-white">Yêu thích</span>
                         </a>
                         <a href="dang-nhap.html" class="product-heart flex items-center">
                             <div class="box-icon mr-1 w-8 h-9 shrink-0">
                                 <img src="theme/frontend/images/icon/icon-user.svg" alt="">
                             </div>
-                            <span class="hidden lg:inline">Đăng nhập/ Đăng ký</span>
+                            <span class="hidden lg:inline text-white">Đăng nhập/ Đăng ký</span>
                         </a>
                     </div>
                 </div>
@@ -71,13 +80,13 @@
                 <div class="flex items-center justify-between lg:justify-normal">
                     <span class="lg:hidden show-menu-mobile text-[var(--cl-main)]"><i
                             class="fa-solid fa-bars"></i></span>
-                    <a href="#" class="h-logo ">
-                        <img src="theme/frontend/images/logo.png" alt="">
+                    <a href="index.html" class="h-logo ">
+                        <img src="theme/frontend/images/logo/logo-header.png" alt="">
                     </a>
                     <div class="menu flex-1 lg:flex justify-center fixed lg:static">
                         <div class="logo-nav-menu lg:hidden">
                             <a href="#">
-                                <img src="theme/frontend/images/logo.png" alt="">
+                                <img src="theme/frontend/images/logo/logo-header.png" alt="">
                             </a>
                         </div>
                         <ul>
@@ -107,11 +116,10 @@
     <div
         class="form-search fixed top-[-100%] left-0 z-50 flex h-full w-full items-center justify-center bg-[rgba(0,0,0,.7)] transition-all duration-300">
         <span class="block close-form-search"></span>
-        <form class="flex items-center form-search" action="" method="GET">
+        <form class="flex items-center form-search" action="gioi-thieu.html" method="GET">
             <input
                 class="form-control mr-2 flex-1 border-t-[0px] border-r-[0px] border-l-[0px] border-b-[1px] border-solid border-white bg-transparent p-3 text-white outline-none placeholder:text-white"
                 id="input-search-header" itemprop="query-input" name="s" placeholder="Nhập từ khóa..." type="text">
-            <input type="hidden" name="post_type" value="post" />
             <button class="btn-search text-[1.25rem] text-white" type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -121,18 +129,132 @@
         <div class="swiper slide-banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-
+                    <div class="img_full">
+                        <img src="theme/frontend/images/banner/banner-home.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="img_full">
+                        <img src="theme/frontend/images/banner/banner-home-2.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section-intro">
+    <section class="section-intro mt-10 xl:mt-16">
         <div class="container">
-            <div class="flex flex-wrap"></div>
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-2/3 lg:pr-20 mb-6 lg:mb-0">
+                    <h2 class="capitalize text-gradient text-center lg:text-left font-bold text-[2.5rem] mb-10">
+                        Giới thiệu</h2>
+                    <div class="short_content text-justify text-[1.125rem] 2xl:max-w-[75%]">
+                        Khoảng mười năm trước, người sáng lập của chúng tôi đang trang bị nội thất cho căn hộ của mình.
+                        Chán nản vì thiếu những chiếc ghế sofa được thiết kế đẹp, chất lượng tốt và giá cả phải chăng,
+                        anh bắt đầu xác định lại quy trình. Ý tưởng rất rõ ràng: cộng tác với các nhà thiết kế và nhà
+                        sản xuất độc lập để tạo ra những tác phẩm bạn yêu thích, trừ phần đánh dấu. Và thế là House.com
+                        ra đời. Nơi tạo dựng ngôi nhà mơ ước của bạn.
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3">
+                    <div class="img_full">
+                        <img src="theme/frontend/images/introduce/image-introduce-home-one.png" alt="Interior Design"
+                            title="Interior Design" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap lg:-mx-2">
+                <div class="w-full lg:w-1/2 lg:px-2">
+                    <a href="gioi-thieu.html"
+                        class="inline-flex mb-4 px-10 py-4 border border-solid border-[#0081a7] rounded-xl bg-[#0081a7] text-white hover:bg-white hover:text-[#0081a7]"
+                        title="Tìm hiểu thêm"><span>Tìm hiểu
+                            thêm</span></a>
+                    <div class="flex flex-wrap justify-center lg:-mx-2">
+                        <div class="w-1/2 lg:px-2 mb-4">
+                            <div class="2xl:text-[4rem] lg:text-[3rem] text-[2rem] text-[#00afb9] text-center">
+                                25+
+                            </div>
+                            <p class="text-[1.125rem] lg:text[1.25rem] text-[#0081a7] text-center">Dự án hoàn thành</p>
+                        </div>
+                        <div class="w-1/2 lg:px-2 mb-4">
+                            <div class="2xl:text-[4rem] lg:text-[3rem] text-[2rem] text-[#00afb9] text-center">
+                                100+
+                            </div>
+                            <p class="text-[1.125rem] lg:text[1.25rem] text-[#0081a7] text-center">Khách hàng</p>
+                        </div>
+                        <div class="w-1/2 lg:px-2 mb-4">
+                            <div class="2xl:text-[4rem] lg:text-[3rem] text-[2rem] text-[#00afb9] text-center">
+                                100+
+                            </div>
+                            <p class="text-[1.125rem] lg:text[1.25rem] text-[#0081a7] text-center">Phong cách độc đáo
+                            </p>
+                        </div>
+                        <div class="w-1/2 lg:px-2 mb-4">
+                            <div class="2xl:text-[4rem] lg:text-[3rem] text-[2rem] text-[#00afb9] text-center">
+                                20+
+                            </div>
+                            <p class="text-[1.125rem] lg:text[1.25rem] text-[#0081a7] text-center">Nhân viên</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 lg:px-2">
+                    <img src="theme/frontend/images/introduce/image-introduce-home-two.png" alt="Interior Design"
+                        title="Interior Design" loading="lazy">
+                </div>
+            </div>
         </div>
     </section>
-    <section class="section-product">
-
+    <section class="section-product mt-10 xl:mt-16">
+        <div class="container">
+            <h2 class="capitalize text-gradient text-center font-bold text-[2rem] mb-10">
+                Sản phẩm chính</h2>
+            <div class="flex flex-wrap lg:-mx-3">
+                <div class="w-full md:w-1/2 lg:w-1/3 md:px-3 mb-6">
+                    <a href="chi-tiet-san-pham.html" title="Sofa Zara" class="c-img pt-[75%]">
+                        <img src="theme/frontend/images/product/image-pro-1.png" alt="">
+                        <span
+                            class="inline-block tag-pro uppercase py-1 px-2 font-medium text-[0.75rem] bg-white absolute top-4 left-4">new</span>
+                    </a>
+                    <div class="flex justify-between mt-2.5">
+                        <h3>
+                            <a href="chi-tiet-san-pham.html" title="Sofa Zara" class="font-medium">
+                                Sofa Zara
+                            </a>
+                        </h3>
+                        <p class="font-medium">3.200.000đ</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 md:px-3 mb-6">
+                    <a href="chi-tiet-san-pham.html" title="Sofa Zara" class="c-img pt-[75%]">
+                        <img src="theme/frontend/images/product/image-pro-1.png" alt="">
+                        <span
+                            class="inline-block tag-pro uppercase py-1 px-2 font-medium text-[0.75rem] bg-white absolute top-4 left-4">new</span>
+                    </a>
+                    <div class="flex justify-between mt-2.5">
+                        <h3>
+                            <a href="chi-tiet-san-pham.html" title="Sofa Zara" class="font-medium">
+                                Sofa Zara
+                            </a>
+                        </h3>
+                        <p class="font-medium">3.200.000đ</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 md:px-3 mb-6">
+                    <a href="chi-tiet-san-pham.html" title="Sofa Zara" class="c-img pt-[75%]">
+                        <img src="theme/frontend/images/product/image-pro-1.png" alt="">
+                        <span
+                            class="inline-block tag-pro uppercase py-1 px-2 font-medium text-[0.75rem] bg-white absolute top-4 left-4">new</span>
+                    </a>
+                    <div class="flex justify-between mt-2.5">
+                        <h3>
+                            <a href="chi-tiet-san-pham.html" title="Sofa Zara" class="font-medium">
+                                Sofa Zara
+                            </a>
+                        </h3>
+                        <p class="font-medium">3.200.000đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="section-services">
 

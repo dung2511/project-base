@@ -23,8 +23,7 @@ body {
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: white;
-  background-color: #010101;
+  font-weight: 400;
 }
 .container {
   width: 100%;
@@ -43,7 +42,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: var(--cl-main);
+  background: linear-gradient(180deg, #0081a7 0%, #00afb9 100%);
 }
 a {
   -webkit-transition: all 0.3s;
@@ -175,6 +174,9 @@ select {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover;
+}
+.img_full img {
+  width: 100%;
 }
 @media(min-width: 1024px) {
   body {

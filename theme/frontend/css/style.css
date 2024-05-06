@@ -5,6 +5,11 @@
 .bg-grandient {
   background: linear-gradient(180deg, #0081a7 0%, #00afb9 100%);
 }
+.text-gradient {
+  background: linear-gradient(180deg, #0081a7 0%, #00afb9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .form-all input {
   width: 100%;
   padding: 1.25rem;
